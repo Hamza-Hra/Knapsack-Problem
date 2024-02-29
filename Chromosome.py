@@ -1,25 +1,29 @@
 import numpy as np
 import random
+from Globals import weights,values,max_capacity
 class Chromosome:
-    def __init__(self,items):
-        n=len(items)
-        self.genes=[0]*n
-    def fitness(self,weights,values,capacity):
-        weight=np.sum(np.array(self.genes)*np.array(weights))
-        if weights>capacity:
+    weights=weights
+    values=values
+    def __init__(self,genes):
+        self.genes=genes
+    def create_copy(self):
+        return Chromosome(list(self.genes))
+    def fitness(self,capacity=max_capacity):
+        weight=np.sum(np.array(self.genes)*np.array(self.weights))
+        if weight>capacity:
             f=0
             return f
         else:
-            f=np.sum(self.genes*values)
+            f=np.sum(np.array(self.genes)*np.array(self.values))
             return f
     def permute(self):
-        index=random.choice(range(0,len(self.genes)))
-        print(f"i=={index}")
-        if self.genes[index]==1:
-            self.genes[index]=0
+        new_chromosome=self.create_copy()
+        index=random.choice(range(0,len(new_chromosome.genes)))
+        if new_chromosome.genes[index]==1:
+            new_chromosome.genes[index]=0
         else:
-            self.genes[index] = 1
-
+            new_chromosome.genes[index] = 1
+        return new_chromosome
 
 
 
