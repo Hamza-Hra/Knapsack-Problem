@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8e97012-6eb9-44f8-8d0e-5477c7181b12" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Load_Data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="e8e97012-6eb9-44f8-8d0e-5477c7181b12" name="Changes" comment="Added a load function to read the data stored in a .txt file">
+      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/Crossover.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/GA.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/Globals.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/Population.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/RouletteWheelSelection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/TournamentSelection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/GeneticAlgorithm/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Chromosome.py" beforeDir="false" afterPath="$PROJECT_DIR$/Chromosome.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Globals.py" beforeDir="false" afterPath="$PROJECT_DIR$/Globals.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LocalSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/LocalSearch.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Chromosome.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Chromosome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Data.txt" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Data.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Globals.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Load_Data.py" beforeDir="false" afterPath="$PROJECT_DIR$/GeneticAlgorithm/Load_Data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LocalSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/LocalSearch/LocalSearch.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/LocalSearch/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,28 +33,44 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2d0xH9acQ04coEMynbhHl3WNY0t" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Chromosome.executor": "Run",
-    "Python.Load_Data.executor": "Run",
-    "Python.LocalSearch.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Chromosome.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Globals.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Load_Data.executor&quot;: &quot;Run&quot;,
+    &quot;Python.LocalSearch.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Mutation.executor&quot;: &quot;Run&quot;,
+    &quot;Python.Population.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\hamza\Documents\Medium Tutorials\KnapSack\PythonCode\GeneticAlgorithm" />
+      <recent name="C:\Users\hamza\Documents\Medium Tutorials\KnapSack\PythonCode" />
+      <recent name="C:\Users\hamza\Documents\Medium Tutorials\KnapSack\PythonCode\LocalSearch" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Chromosome" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PythonCode" />
@@ -62,7 +85,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\hamza\Documents\Medium Tutorials\KnapSack\PythonCode\Chromosome.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\hamza\Documents\Medium Tutorials\KnapSack\PythonCode\GeneticAlgorithm\Chromosome.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -88,6 +111,19 @@
       <option name="presentableId" value="Default" />
       <updated>1709158707051</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added a load function to read the data stored in a .txt file">
+      <option name="closed" value="true" />
+      <created>1709246360986</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1709246360986</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added a load function to read the data stored in a .txt file" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a load function to read the data stored in a .txt file" />
   </component>
 </project>

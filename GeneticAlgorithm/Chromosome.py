@@ -1,6 +1,6 @@
 import numpy as np
 import random
-from Globals import weights,values,max_capacity
+from Globals import weights,values,max_capacity,Pmut
 class Chromosome:
     weights=weights
     values=values
@@ -24,6 +24,15 @@ class Chromosome:
         else:
             new_chromosome.genes[index] = 1
         return new_chromosome
+
+
+    def mutate(self, Pmut=Pmut):
+        p = random.uniform(0, 1)
+        if p <= Pmut:
+            newoffspring=self.permute()
+            return newoffspring
+        else:
+            return self
 
 
 
