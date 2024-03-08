@@ -1,5 +1,3 @@
-
-
 def load(file):
     weights=[]
     values=[]
